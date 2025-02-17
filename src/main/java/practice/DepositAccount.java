@@ -5,7 +5,7 @@ import java.time.temporal.ChronoUnit;
 
 public class DepositAccount extends BankAccount {
 
-    LocalDate lastIncome;
+    private LocalDate lastIncome;
 
     @Override
     public void take(double amountToTake) {

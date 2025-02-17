@@ -1,10 +1,8 @@
 package practice;
 
-import java.time.LocalDate;
-
 public class BankAccount {
 
-    double amount;
+    protected double amount;
 
     public BankAccount() {
         this.amount = 0;
