@@ -1,20 +1,30 @@
 package practice;
 
+import java.time.LocalDate;
+
 public class BankAccount {
 
-  public double getAmount() {
-    //TODO: реализуйте метод и удалите todo
-    // верните значение количества денег не счету
-    return 0;
-  }
+    double amount;
 
-  public void put(double amountToPut) {
-    //TODO: реализуйте метод и удалите todo
-    // метод зачисляет деньги на счет
-  }
+    public BankAccount() {
+        this.amount = 0;
+    }
 
-  public void take(double amountToTake) {
-    //TODO: реализуйте метод и удалите todo
-    // метод списывает деньги со счета
-  }
+    public double getAmount() {
+        return amount;
+    }
+
+    public void put(double amountToPut) {
+
+        if (amountToPut > 0) {
+            amount += amountToPut;
+        }
+    }
+
+    public void take(double amountToTake) {
+
+        if (amount - amountToTake >= 0) {
+            amount -= amountToTake;
+        }
+    }
 }
